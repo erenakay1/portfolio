@@ -1,0 +1,33 @@
+# ---- Secrets / credentials ----
+# config.php holds DB password — never commit. Use config.example.php as template.
+config.php
+
+# ---- macOS / OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- PHP / Composer (defensive; project is vanilla) ----
+vendor/
+composer.lock
+
+# ---- Logs ----
+*.log
+error_log
+php_errors.log
+
+# ---- Build / deploy artifacts ----
+node_modules/
+dist/
+build/
+
+# ---- Local override files ----
+*.local
+.env
+.env.local

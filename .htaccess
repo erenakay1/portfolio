@@ -1,0 +1,33 @@
+# Minimal .htaccess — kept conservative for InfinityFree.
+
+# Default landing page.
+DirectoryIndex index.php index.html
+
+# Protect sensitive files.
+<FilesMatch "^(config\.php|\.htaccess|README\.md)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent directory listing.
+Options -Indexes
+
+# UTF-8 by default.
+AddDefaultCharset UTF-8
+
+# Basic security headers (do not break HTTP testing).
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache static assets briefly (InfinityFree-safe).
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css                 "access plus 1 days"
+    ExpiresByType application/javascript   "access plus 1 days"
+    ExpiresByType image/png                "access plus 7 days"
+    ExpiresByType image/jpeg               "access plus 7 days"
+    ExpiresByType image/webp               "access plus 7 days"
+    ExpiresByType image/svg+xml            "access plus 7 days"
+</IfModule>
