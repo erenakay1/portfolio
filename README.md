@@ -164,8 +164,8 @@ _Placeholders — replace with real screenshots before submitting._
 
 _Add the URL here after InfinityFree deployment._
 
-- Public site: `https://<your-subdomain>.infinityfreeapp.com/`
-- Admin login: `https://<your-subdomain>.infinityfreeapp.com/admin/login.php`
+- Public site: `https://4bb2d85a-98c2-4d9a-8aca-ab22d323f4fc-00-2dnnczbquc832.pike.replit.dev/`
+- Admin login: `https://4bb2d85a-98c2-4d9a-8aca-ab22d323f4fc-00-2dnnczbquc832.pike.replit.dev/admin/login.php`
 
 ---
 
